@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 
+__author__ = "Jason M. Pittman"
+__copyright__ = "Copyright 2022"
+__credits__ = ["Jason M. Pittman"]
+__license__ = "GPLv3"
+__version__ = "0.1.0"
+__maintainer__ = "Jason M. Pittman"
+__email__ = "jason@jasonmpittman.com"
+__status__ = "Beta"
+
 import argparse
 import os
 import sys
@@ -22,7 +31,8 @@ def main():
             for k in bib.keys():
                 citeKeys.add(k)
         
-        print(citeKeys)             
+        for k in citeKeys:
+            print(k)             
 
     except Exception as e:
         print(str(e))
